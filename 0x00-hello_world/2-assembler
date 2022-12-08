@@ -1,2 +1,2 @@
-#!bin/bash
+#!/bin/bash
 gcc -S 2-assembler.c
