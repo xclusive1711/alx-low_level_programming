@@ -6,7 +6,7 @@
  * Return: no returns
  */
 
-void print_most_numbers(void);
+void print_most_numbers(void)
 {
 	int num;
 
@@ -15,7 +15,7 @@ void print_most_numbers(void);
 		if (num == '2' || num == '4')
 			continue;
 		else
-			printf("%d", num);
+			_putchar("num");
+		_putchar('\n')
 	}
-		_putchar(num);
-		_putchar(\n);
+}
