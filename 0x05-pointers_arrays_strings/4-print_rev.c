@@ -12,7 +12,7 @@ void print_rev(char *s)
 	int start;
 
 	/*finds the length of string character without null character*/
-	for (start = 0; s[start] != '\0'; ++index)
+	for (start = 0; s[start] != '\0'; ++start)
 		;
 
 	/*print char from the last index as you decrement*/
