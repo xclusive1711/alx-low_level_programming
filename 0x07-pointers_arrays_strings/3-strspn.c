@@ -3,30 +3,30 @@
  * @s: pointer to string input
  * @accept: substring prefix to look for
  * Return: the number of bytes in the initial segment
-*/
+ */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int a, b, c;
+	int i, j, f;
 
-	a = 0;
-	while (s[a] != '\0')
+	i = 0;
+	while (s[i] != '\0')
 	{
-		a = 0;
-		c = 1;
-		while (accept[b] != '\0')
+		j = 0;
+		f = 1; /*flag status*/
+		while (accept[j] != '\0')
 		{
-			if (s[a] == accept[b])
+			if (s[i] == accept[j])
 			{
-				c = 0;
+				f = 0; /*success*/
 				break;
 			}
-			b++;
+			j++;
 		}
-		if (c == 1)
+		if (f == 1)
 			break;
-		a++;
+		i++;
 	}
 
-	return (a);
+	return (i);
 }
