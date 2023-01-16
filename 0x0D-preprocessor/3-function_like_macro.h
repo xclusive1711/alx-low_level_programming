@@ -1,5 +1,6 @@
+#ifndef _FUNCTION_LIKE_MACRO_H
+#define _FUNCTION_LIKE_MACRO_H
 #include <stdlib.h>
-#ifndef 3 - FUNCTION_LIKE_MACRO.H
 #define ABX(x) (abs(x))
 
 #endif
